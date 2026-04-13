@@ -23,6 +23,7 @@ public class LinkedListExample {
         // add() method adds elements to the LinkedList
         list.add(30);
         list.add(40);
+        list.get(1);
 
         // Printing the LinkedList
         System.out.println(list);   // [30, 40]

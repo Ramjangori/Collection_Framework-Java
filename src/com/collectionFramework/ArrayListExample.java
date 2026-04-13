@@ -11,7 +11,7 @@ public class ArrayListExample {
     public static void main(String[] args) {
 
         // Creating an ArrayList object of Integer type
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList list = new ArrayList();
 
         // add() method is used to add elements to the ArrayList
         list.add(10);
@@ -22,17 +22,41 @@ public class ArrayListExample {
 
         // Adding another element
         list.add(50);
+        list.add("Regex");
+        list.add(1);
+        list.add(50);
+        list.add("Regex");
+        list.add(1);
+        list.add(50);
+        list.add("Regex");
+        list.add(1);
+       
+        
+        Iterator  it = list.iterator();
+        while(it.hasNext()) {
+        	System.out.println(it.next());
+        }
+       
+        ListIterator i = list.listIterator();
+        
+        while(i.hasNext()) {
+        	System.out.println(i.next());
+        }
+       
 
         // get(index) is used to access an element at a specific index
-        System.out.println(list.get(0));
+        //System.out.println(list.get(0));
 
         // size() returns the number of elements in the ArrayList
-        System.out.println(list.size());
+        //System.out.println(list.size());
 
         // contains() checks whether the element exists in the list
-        System.out.println(list.contains(30));
+        //System.out.println(list.contains(30));
 
         // add(index, element) inserts an element at a specific index
-        list.add(2, 50);
+        //list.add(2, 50);
+        
+
+
     }
 }
